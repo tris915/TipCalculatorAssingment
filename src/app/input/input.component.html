@@ -2,7 +2,7 @@
 <span>Tip Calculator</span>
 </mat-toolbar>
 <mat-card >
-  <form >
+  <form (ngSubmit)="onSubmit()">
     <mat-form-field appearance="fill">
       <mat-label>Cost of Service</mat-label>
       <input type="number" required>

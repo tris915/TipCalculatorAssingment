@@ -20,7 +20,8 @@ import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatCard} from "@angular/material/card";
 import {MatToolbar} from "@angular/material/toolbar";
-
+import {RouterModule, Routes} from "@angular/router";
+const routes: Routes = []
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import {MatToolbar} from "@angular/material/toolbar";
     MatCheckbox,
     MatCard,
     MatToolbar,
+    RouterModule.forRoot(routes)
 
   ],
   providers: [
