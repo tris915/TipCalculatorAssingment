@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+<span>Tip Calculator</span>
+</mat-toolbar>
+<mat-card >
+  <form >
+    <mat-form-field appearance="fill">
+      <mat-label>Cost of Service</mat-label>
+      <input type="number" required>
+
+    </mat-form-field>
+
+    <mat-label>Service Quality</mat-label>
+    <mat-radio-group>
+      <mat-radio-button value="0.15">Okay - 15%</mat-radio-button>
+      <mat-radio-button value="0.18">Good - 18%</mat-radio-button>
+      <mat-radio-button value="0.20">Excellent - 20%</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-checkbox >Round Up Tip</mat-checkbox>
+    <br>
+    <button mat-raised-button color="primary" type="submit" >Calculate Tip</button>
+  </form>
+</mat-card>
