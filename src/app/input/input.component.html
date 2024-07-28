@@ -1,21 +1,22 @@
 <mat-toolbar color="primary">
-<span>Tip Calculator</span>
+  <span>Tip Calculator</span>
 </mat-toolbar>
-<mat-card >
+<mat-card>
   <form #tipform="ngForm" (ngSubmit)="onSubmit()">
     <mat-form-field appearance="fill">
       <mat-label>Cost of Service</mat-label>
-      <input type="number" [(ngModel)]="tipdata.cost" required>
+      <input matInput type="number" [(ngModel)]="tipdata.bill" name="bill" required>
     </mat-form-field>
     <mat-label>Quality of Service</mat-label>
-    <mat-radio-group>
-      <mat-radio-button value="0.15" [(ngModel)]="tipdata.quality">Okay - 15%</mat-radio-button>
-      <mat-radio-button value="0.18" [(ngModel)]="tipdata.quality">Good - 18%</mat-radio-button>
-      <mat-radio-button value="0.20" [(ngModel)]="tipdata.quality">Excellent - 20%</mat-radio-button>
+
+    <mat-radio-group aria-label="Select an option" name="quality" [(ngModel)]="tipdata.quality" required>
+      <mat-radio-button [value]="1.15">Okay - 15%</mat-radio-button>
+      <mat-radio-button [value]="1.18">Good - 18%</mat-radio-button>
+      <mat-radio-button [value]="1.20">Excellent - 20%</mat-radio-button>
     </mat-radio-group>
 
-    <mat-checkbox [(ngModel)]="tipdata.roundup" >Round Up Tip</mat-checkbox>
+    <mat-checkbox [(ngModel)]="tipdata.roundup" name="roundup">Round Up Tip</mat-checkbox>
     <br>
-    <button mat-raised-button color="primary" type="submit" [disabled]="tipform.form.invalid" >Calculate Tip</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="tipform.form.invalid">Calculate Tip</button>
   </form>
 </mat-card>

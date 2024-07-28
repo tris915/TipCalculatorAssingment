@@ -1,11 +1,11 @@
 <mat-toolbar color="primary">
-  <span>Tip </span>
+  <span>Tip Calculator Results</span>
 </mat-toolbar>
-<mat-card >
-  <p>Cost of Service: </p>
-
-
-  <p>Calculated Tip: </p>
-  <p>Total Bill: </p>
+<mat-card class="result-card" *ngIf="tipdata">
+  <p>Cost of Service: {{ tipdata.bill | currency }}</p>
+  <p>Service Quality: {{ (tipdata.quality - 1) * 100 }}%</p>
+  <p>Round Up Tip: {{ tipdata.roundup ? 'Yes' : 'No' }}</p>
+  <p>Calculated Tip: {{ calculatedtip | currency }}</p>
+  <p>Total Bill: {{ total | currency }}</p>
 
 </mat-card>
