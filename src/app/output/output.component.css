@@ -1,0 +1,37 @@
+mat-toolbar {
+  background-color: dodgerblue;
+  color: white;
+  margin-bottom: 20px;
+}
+
+mat-toolbar span {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+mat-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: lightblue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+mat-card p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: dodgerblue;
+}
+
+mat-card p strong {
+  color: dodgerblue;
+}
+
+mat-card button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: dodgerblue;
+  color: white;
+}

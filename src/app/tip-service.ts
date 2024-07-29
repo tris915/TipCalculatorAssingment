@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Tip} from "./tip";
 
-
 @Injectable({
   providedIn: 'root'
 })

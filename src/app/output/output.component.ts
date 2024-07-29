@@ -15,7 +15,8 @@ export class OutputComponent implements OnInit {
   calculatedtip: number = 0;
   total: number = 0;
 
-  constructor(service: TipService) {
+
+  constructor(service: TipService, private router: Router) {
     this.tipdata = service.tip;
   }
   ngOnInit(): void {
@@ -29,5 +30,8 @@ export class OutputComponent implements OnInit {
     }
     this.total = this.calculatedtip + this.tipdata.bill;
 
+  }
+  toInput(): void {
+    this.router.navigate(['/input']);
   }
 }

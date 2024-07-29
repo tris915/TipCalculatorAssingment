@@ -5,7 +5,7 @@ import {Tip} from "../tip";
 import {FormsModule} from "@angular/forms";
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatCard} from "@angular/material/card";
-import {MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel} from "@angular/material/form-field";
+import {MatError, MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel} from "@angular/material/form-field";
 import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatInput, MatInputModule} from '@angular/material/input';
@@ -27,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCheckbox,
     MatButton,
     MatInput,
+    MatError,
 
   ],
   standalone: true

@@ -1,0 +1,59 @@
+.tip-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: lightblue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.radio-button {
+  display: block;
+  margin-bottom: 10px;
+  color: dodgerblue;
+}
+
+mat-toolbar {
+  margin-bottom: 20px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+mat-card {
+  border-radius: 8px;
+  background-color: white;
+}
+
+mat-label {
+  color: dodgerblue;
+}
+
+mat-checkbox {
+  color: dodgerblue;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+strong {
+  color: dodgerblue;
+}
+
+mat-toolbar{
+  text-align: center;
+}
+mat-toolbar span {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
